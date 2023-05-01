@@ -1,0 +1,131 @@
+html(lang="en")
+    head 
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title="Sadesty Rahmadhani"
+        link(rel="stylesheet", href="assets/css/bootstrap.min.css")
+        link(rel="stylesheet", href="assets/css/fontawesome-all.min.css")
+        link(rel="stylesheet", href="assets/css/style.css")
+    body.bg-dark-light.text-white
+        #particles-js
+        #renderThreeJS.opacity-0.bg-dark-light
+        //- loader
+        .loader.row
+            .col-2.loader-item.bg-dark-light.hide1
+            .col-3.loader-item.bg-dark-light.hide2
+            .col-2.loader-item.bg-dark-light.hide1
+            .col-3.loader-item.bg-dark-light.hide2
+            .col-2.loader-item.bg-dark-light.hide1
+        
+        //- outline
+        .col-md-8.col-sm-10.col-12.outline 
+            .col-4.mx-auto.outline
+
+        //- navbar
+        .navbar.navbar-dark.navbar-expand-lg
+            a.navbar-brand(href="")
+                strong="Sadesty "
+                    span.text-pink="Rahmadhani"
+            button.navbar-toggler(data-toggle="collapse", data-target="#navbarSupport")
+                span.navbar-toggler-icon 
+            .collapse.navbar-collapse#navbarSupport 
+                ul.navbar-nav.ms-auto 
+                    li.nav-item.active 
+                        a.nav-link(href="#home")="Home"
+                    li.nav-item
+                        a.nav-link(href="#about")="About Me"
+                    li.nav-item
+                        a.nav-link(href="#education")="Education"
+                    li.nav-item
+                        a.nav-link(href="#contact")="Contact Us"
+
+        //- home
+        #home.bg-dark 
+            .col-7.bg-banner
+                img(src="assets/images/pngegg (1).png", width="100%", height="780")
+            .container.row.align-items-center.justify-content-center
+                .card-image.d-none.d-md-block
+                    img(src="assets/images/IMG_20220528_180953.png", width="500")
+                .card-title="Hello, saya "
+                    strong.text-pink="Sadesty Rahmadhani "
+                    =", Mahasiswa Dari Politeknik Negeri Banyuwangi"
+                    br
+                    span.badge.badge-dark#typingText
+        
+        //- about
+        #about.py-5 
+            .col-md-8.col-sm-10.col-12.mx-auto.my-5
+                .d-flex.align-items-center.justify-content-center.mb-3 
+                    .col-md-5.col-sm-6.col-12.d-none.d-md-block 
+                        .custom-image.ms-auto 
+                            img(src="assets/images/WhatsApp Image 2022-04-19 at 00.18.21.jpeg", width="100%")
+                    .col-md-6.col-sm-6.col-12.p-3
+                        h3.title.mb-4="About Me"
+                        p.text-muted(style="text-align: justify")="Halo, nama saya Sadesty Rahmadhani. Saya tinggal di Desa Sumberbulu, Kec. Songgon, Banyuwangi. Saat ini, saya sedang menempuh pendidikan Diploma 4 Program Studi Teknik Informatika di Politeknik Negeri Banyuwangi."
+                        button.btn.btn-pink="Visit My Portofolio"
+
+        //- contact
+        #contact.py-5.pb-0 
+            h3.text-center.mb-5.title="Contact Us"
+            .col-md-8.col-sm-10.col-12.mx-auto 
+                .card-custom.bg-dark-light.text-center.mb-5
+                    h4.mb-4="Kirim Pesan Kepada Saya"
+                    .row 
+                        .col-sm-6 
+                            .mb-3 
+                                input.form-control(type="text", placeholder="Email")
+                        .col-sm-6 
+                            .mb-3 
+                                input.form-control(type="text", placeholder="Phone Number (Optional)")
+                        .col-sm-12 
+                            .mb-3 
+                                textarea.form-control(rows="4", placeholder="Tulis Pesan")
+                    .btn.btn-pink.mb-3
+                        i.fa.fa-paper-plane
+                        =" Send Message"
+                .card-custom.bg-dark-light.p-0.m-0 
+                    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d987.2149558897553!2d114.17128282915321!3d-8.216848999630425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7bacb78d7fff52de!2zOMKwMTMnMDAuNyJTIDExNMKwMTAnMTguNiJF!5e0!3m2!1sid!2ssg!4v1653737060051!5m2!1sid!2ssg", width="100%", height="450", style="border:0;" allowfullscreen="", loading="lazy", referrerpolicy="no-referrer-when-downgrade")
+            .p-3.bg-dark.text-white(style="position: relative;z-index: 999")
+                .col-md-8.col-sm-10.col-12.mx-auto.row 
+                    .col-sm-4.d-flex.align-items-center.mb-3 
+                        .col-2
+                            .fa.fa-home.fa-2x 
+                        .col-9 
+                            h5.m-0.p-0="Jl. Singo Prawiro"
+                            p.text-muted.m-0.p-0(style="color: #e7e7e7!important")="Sumberbulu - Songgon - Banyuwangi"
+                    .col-sm-4.d-flex.align-items-center.mb-3 
+                        .col-2
+                            .fa.fa-phone.fa-2x 
+                        .col-9 
+                            h5.m-0.p-0="+62 899 1322 2238"
+                            p.text-muted.m-0.p-0(style="color: #e7e7e7!important")="Mon - Fri 08:00 - 16:00"
+                    .col-sm-4.d-flex.align-items-center.mb-3 
+                        .col-2
+                            .fa.fa-envelope.fa-2x 
+                        .col-9 
+                            h5.m-0.p-0="sadestyrahmadhani012@gmail.com"
+                            p.text-muted.m-0.p-0(style="color: #e7e7e7!important")="Email"
+            .p-4.text-center(style="position: relative;z-index: 9999;background: #090909")
+                .row.d-none.d-md-block 
+                    .col-sm-6.text-start.text-muted 
+                        .fab.fa-github.fa-2x.mx-3
+                        .fab.fa-facebook.fa-2x.mx-3
+                        .fab.fa-whatsapp.fa-2x.mx-3
+                        .fab.fa-instagram.fa-2x.mx-3
+                        .fab.fa-twitter.fa-2x.mx-3
+                    .col-sm-6.text-end.text-muted="Copyright 2023 - Sadesty Rahmadhani"
+                .row.d-block.d-md-none 
+                    .col-sm-6.text-center.text-muted.mb-3
+                        .fab.fa-github.fa-2x.mx-3
+                        .fab.fa-facebook.fa-2x.mx-3
+                        .fab.fa-whatsapp.fa-2x.mx-3
+                        .fab.fa-instagram.fa-2x.mx-3
+                        .fab.fa-twitter.fa-2x.mx-3
+                    .col-sm-6.text-center.text-muted="Copyright 2023 - Sadesty Rahmadhani"
+
+        script(src="assets/js/jquery.min.js")
+        script(src="assets/js/bootstrap.bundle.min.js")
+        script(src="assets/js/three.js")
+        script(src="assets/js/particles.js")
+        script(src="assets/js/app.js")

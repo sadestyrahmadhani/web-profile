@@ -1,0 +1,397 @@
+.bg-dark {
+    background: #000000!important;
+}
+
+.bg-dark-light {
+    background: #121212!important;
+}
+
+.outline {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    border-left: 1px solid #323232;
+    border-right: 1px solid #323232;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    padding: 30px 40px;
+    z-index: 9999;
+}
+
+.navbar-brand {
+    color: #bbbbbb!important;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.badge-dark {
+    background: #121212;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-top: 15px;
+}
+
+.text-pink {
+    color: #f800ba;
+}
+
+.bg-banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scaleX(-1)
+}
+
+.btn-pink {
+    background: #f800ba;
+    border: 1px solid #3f3f3f;
+    color: #fff;
+}
+
+.btn-pink:hover, .btn-pink:focus {
+    background: #bb008c;
+    color: #fff;
+}
+
+.navbar .nav-item.active > a.nav-link, .navbar .nav-item:hover > a.nav-link {
+    color: #f800ba;
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #121212;
+    z-index: 99999;
+    animation: navbarFade .8s ease-in-out;
+}
+
+@keyframes navbarFade {
+    0% {
+        top: -150px;
+    } 100% {
+        top: 0;
+    }
+}
+
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: -100px;
+    overflow: hidden;
+}
+
+#home .card-image {
+    display: inline-block;
+    width: 700px;
+    height: 650px;
+    -webkit-clip-path: polygon(31% 0, 100% 20%, 70% 100%, 0 60%);
+    clip-path: polygon(31% 0, 100% 20%, 70% 100%, 0 60%);
+    background: #080808;
+}
+
+#home .card-image img {
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+#home .card-title {
+    display: inline-block;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    width: 500px;
+    margin-top: 120px;
+    margin-left: -70px;
+}
+
+@media(max-width: 500px) {
+    #home .card-title {
+        margin: 15rem 8rem!important;
+        z-index: 9999;
+    }
+}
+
+#about .title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+#about .custom-image {
+    display: block;
+    width: 350px;
+    height: 430px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#about .custom-image:before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 430px;
+    border: 7px solid #424242;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: -30px;
+    z-index: -1;
+}
+
+#about .custom-image img {
+    margin-top: -130px;
+}
+
+#education {
+    position: relative;
+}
+
+#education .title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+#education .education {
+    position: relative;
+    z-index: 9999;
+    border-radius: 10px;
+}
+
+#education .education .line {
+    position: absolute;
+    border: 1px solid #f800ba;
+    width: 1px;
+    height: 64%;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+
+#education .item {
+    position: relative;
+    display: flex;
+    align-items: center;;
+    width: 50%;
+}
+
+#education .item .circle {
+    width: 20px;
+    height: 20px;
+    border: 5px solid #f800ba;
+    border-radius: 50%;
+    background: #121212;
+}
+
+#education .item.right .card-custom {
+    width: 91%;
+    margin-left: auto;
+    padding: 10px;
+    border: 1px solid #3f3f3f;
+    border-radius: 10px;
+}
+
+#education .item.right {
+    margin-left: 49%;
+}
+
+#education .item.left .card-custom {
+    width: 91%;
+    margin-right: auto;
+    padding: 10px;
+    border: 1px solid #3f3f3f;
+    border-radius: 10px;
+}
+
+#education .item.left {
+    margin-left: 1%;
+    text-align: right;
+}
+
+#education .item .title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    color: #878787
+}
+
+#skill .title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+#skill .card-skill {
+    position: relative;
+    padding: 10px 30px;
+    border: 1px solid #323232;
+    border-radius: 10px;
+    z-index: 9999;
+}
+
+#skill .card-skill .title {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 8px;
+}
+
+.bg-pink {
+    background: #f800ba;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 4px;
+    background: #323232;
+}
+
+#project .card.project {
+    border-radius: 10px;
+}
+
+#project .card.project .card-image {
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+#project .card.project .category {
+    color: #878787;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+}
+
+#project .card.project .title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#project .card.project .deskripsi {
+    color: #bbbbbb;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+#contact .title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+#contact .card-custom {
+    position: relative;
+    padding: 15px 30px;
+    border: 1px solid #323232;
+    z-index: 9999;
+}
+
+#contact .form-control {
+    background: #121212;
+    border: 1px solid #323232;
+    color: #fff;
+}
+
+#contact .form-control:focus {
+    box-shadow: 0 0 10px #f800ba5c;
+}
+
+#ballsAnimation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    overflow: hidden;
+}
+
+.loader-item {
+    height: 100vh;
+    border-left: 1px solid #323232;
+    border-right: 1px solid #323232;
+}
+
+.hideUp {
+    animation: hideUp 2s ease-in-out;
+    opacity: 0;
+}
+
+@keyframes hideUp {
+    0% {
+        margin-top: 0;
+        opacity: 1;
+    } 100% {
+        margin-top: -1000px;
+        opacity: 1;
+    }
+}
+
+.hideDown {
+    animation: hideDown 2s ease-in-out;
+    opacity: 0;
+}
+
+@keyframes hideDown {
+    0% {
+        margin-top: 0;
+        opacity: 1;
+    } 100% {
+        margin-top: 1000px;
+        opacity: 1;
+    }
+}
+
+.hide {
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+    animation: hide 2.2s ease-in-out;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+        z-index: 99999;
+    } 100% {
+        opacity: 1;
+        z-index: 99999;
+    }
+}
+
+#renderThreeJS {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: #fff;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
